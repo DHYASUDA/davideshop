@@ -1,0 +1,46 @@
+Java in 2025 means java backened, spring boot, cloud micoservices for most in demand jobs.
+
+most common java jobs:
+1. backened web developer - java 17/21 - spring boot, rest apis, databases, docker, cloud
+Buzzwords to know- microservices, rest, kafka, aws/azure/gcp, ci/cd
+
+- narrow/routine coding roles are being exposed to AI and being prone to cut
+- Back-end/software engineers who can design systems, understand databases, performance, security, and work with cloud are strong.+
+
+plan:
+
+1.) Work on becoming a backened web developer:
+
+
+
+postgres
+12345
+
+Springboot architecture:
+Controller - HTTP requests post/get (revievces json daata from react)
+Service: buinessness logic - how user interaction effects databases
+Repository - CRUD of the database
+model = entities
+DTO - data transfer object (incoming data from react (name,password,email))
+
+defintions:
+@RestController - java class that returns json/text. this handles http requesats
+@column maps varables to the databse columnn
+
+Insant is basically calucaltiing the time in nano seconds e.g time when account was created.
+
+interface in the repositories will tell java to create a class that can CRUD with the database.
+the JpaRepo<T, entity> = JPA requries a entity type which is the x entity and a ID for the data you want (user.ID). 
+Optinal is basically an error catch e.g, if you try to find a user that doesnt exisit it wont crash. 
+
+flow:
+react (where the user enters data) -> controller (recieves https reuqests so data) -> Service (what user wants to do with the data) -> Repoository (CRUD) -> database
+
+flow in detail:
+user enters value e.g name/email/password into react, react turns it into a json file, that gets sent to the controller which handles http request and verifies if the connect and maps the values fron the json into a dto. then the controller calls on the service class which verifies if the data given exisits in the data base or not. if it doesnt, it creates and account and the repo creates a new data for the database. 
+
+
+Then goes back = database, repo, service, controller, react
+
+
+
