@@ -29,16 +29,20 @@ public class userEntity {
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt = Instant.now();
 
+    
      // === getters & setters ===
     public Long getId() {
         return id;
     }
 
-    // no setter for id; DB sets it
 
-    public String getEmail() {
+    
+    // no setter for id; DB sets it
+public String getEmail() {
         return email;
     }
+
+    
 
     public void setEmail(String email) {
         this.email = email;
