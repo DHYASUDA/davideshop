@@ -1,5 +1,7 @@
 package com.example.davideshop.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,6 +22,11 @@ public class productController {
         this.productService = productService;
     }
 
+    @PostMapping("/createProduct")
+    public ResponseEntity<productEntity> createProduct(@RequestBody productRequest request){
+        productEntity product = productService.createProduct(request);
+        return ResponseEntity.status(HttpStatus.CREATED).body(product);
+    }
     @PostMapping("/search-by-id")
     public productEntity searchById(@RequestBody productRequest request) {// this turns react json file to a dto
         return productService.searchById(request);

@@ -25,7 +25,6 @@ public class productService {
         product.setPrice(request.getPrice());
         product.setStockQuantity(request.getStockQuantity());
         product.setCategory(request.getCategory());
-        product.setCreatedBy(request.getName());
         product.setImageUrl(request.getImageUrl());
         return productRepo.save(product); 
     }
