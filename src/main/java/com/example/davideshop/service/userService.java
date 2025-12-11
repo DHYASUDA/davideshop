@@ -21,7 +21,7 @@ public class userService {
         if (!userRepo.findByEmail(request.getEmail()).isPresent()) {
             userEntity user = new userEntity();
             user.setEmail(request.getEmail());
-            user.setFullName(request.getfullName());
+            user.setFullName(request.getFullName());
             user.setPassword(request.getPassword());
             return userRepo.save(user);
         } else {
