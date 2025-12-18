@@ -26,6 +26,7 @@ Service: buinessness logic - how user interaction effects databases
 Repository - CRUD of the database
 model = entities
 DTO - data transfer object (incoming data from react (name,password,email))
+StringUtils checks if a dto request is emppty or not e.g. if user entered their email in the input, if it was empty then do x
 
 defintions:
 @RestController - java class that returns json/text. this handles http requesats
@@ -48,3 +49,12 @@ Then goes back = database, repo, service, controller, react
 
 
 
+TODO:
+12/15
+1.) integrate address during sign up (done)
+2.) properly display it on the user address (done)
+3.) being able to edit it. (done)
+4.) error when editing user info, if password is unchanged, the password would update to nothing when saved (done)
+5.) address doesnt get displayed unless you edit the profile info. (done)
+6.) move controller logic to service class (done)
+7.) email already in used in sign up doesnt work in the sign up.,it only appears in the address sign up part (done)
