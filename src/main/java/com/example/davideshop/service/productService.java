@@ -1,6 +1,13 @@
 package com.example.davideshop.service;
-
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.Base64;
+import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
@@ -25,8 +32,41 @@ public class productService {
         product.setPrice(request.getPrice());
         product.setStockQuantity(request.getStockQuantity());
         product.setCategory(request.getCategory());
-        product.setImageUrl(request.getImageUrl());
-        return productRepo.save(product); 
+        product.setCreatedBy(request.getCreatedBy());
+
+        String dataUrl = request.getimageBase64(); // make sure DTO getter name matches
+ 
+        if (dataUrl != null && !dataUrl.isBlank()) {
+            int comma = dataUrl.indexOf(',');
+            if (comma < 0) throw new IllegalArgumentException("Invalid imageBase64 format");
+
+            String meta = dataUrl.substring(0, comma);
+            String b64 = dataUrl.substring(comma + 1);
+
+            String ext = "jpg";
+            if (meta.contains("image/png")) ext = "png";
+            else if (meta.contains("image/webp")) ext = "webp";
+            else if (meta.contains("image/jpeg")) ext = "jpg";
+
+            byte[] bytes = Base64.getDecoder().decode(b64);
+
+            if (bytes.length > 2 * 1024 * 1024) {
+                throw new IllegalArgumentException("Image too large (max 2MB)");
+            }
+
+            try {
+                Files.createDirectories(Paths.get("uploads"));
+                String filename = UUID.randomUUID() + "." + ext;
+                Path path = Paths.get("uploads").resolve(filename);
+                Files.write(path, bytes, StandardOpenOption.CREATE_NEW);
+
+                product.setImageUrl("/uploads/" + filename);
+            } catch (IOException e) {
+                throw new RuntimeException("Failed to save uploaded image", e);
+            }
+        }
+
+        return productRepo.save(product);
     }
     // search product by id
     public productEntity searchById(productRequest request) {
@@ -37,6 +77,14 @@ public class productService {
         }
         productEntity product = optionalProduct.get();
         return product;
-
+    }
+    //search product by email from the created_by
+    public List<productEntity> searchByEmail(String email){
+        //this gets email
+        List<productEntity> optionalProduct = productRepo.findByCreatedBy(email);
+        if(optionalProduct.isEmpty()){
+            throw new IllegalArgumentException("Unable to find products from email");
+        }
+        return optionalProduct;
     }
 }

@@ -17,7 +17,7 @@ public class productRequest {
     private String category;
 
     private String createdBy;
-    private String imageUrl;
+    private String imageBase64;
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
@@ -26,12 +26,12 @@ public class productRequest {
         return id;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getimageBase64() {
+        return imageBase64;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setimageBase64(String imageBase64) {
+        this.imageBase64 = imageBase64;
     }
 
     public String getCreatedBy() {

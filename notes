@@ -58,3 +58,9 @@ TODO:
 5.) address doesnt get displayed unless you edit the profile info. (done)
 6.) move controller logic to service class (done)
 7.) email already in used in sign up doesnt work in the sign up.,it only appears in the address sign up part (done)
+
+12/18 TODO
+1.) add products (done)
+2.) created by (done)
+3.) fix image products  (kinda)
+4.) display products (no)

@@ -49,17 +49,17 @@ public class productEntity {
     public productEntity() {}
 
     public productEntity(String name, String description, BigDecimal price,
-                   Integer stockQuantity, String category, String imageUrl) {
+                   Integer stockQuantity, String category, String createdBy, String imageUrl) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.stockQuantity = stockQuantity;
         this.category = category;
-        this.createdBy = name;
+        this.createdBy = createdBy;
         this.imageUrl = imageUrl;
     }
 
-    public void setImageUrl(String imageUrld) {
+    public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
     public String getImageUrl() {

@@ -1,5 +1,7 @@
 package com.example.davideshop.controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.davideshop.dto.productRequest;
 import com.example.davideshop.model.productEntity;
 import com.example.davideshop.service.productService;
+
 
 @RestController // tells java that this class is a restcontroller and to look for http requests
 @RequestMapping("/api/products")
@@ -32,4 +35,13 @@ public class productController {
         return productService.searchById(request);
     }
 
+    @PostMapping("/display-user-products")
+    public ResponseEntity<List<productEntity>> displayUserProducts(@RequestBody productRequest request){
+    List<productEntity> products = productService.searchByEmail(request.getCreatedBy());
+
+    // Return the list with a 200 OK status
+    return ResponseEntity.ok(products);
+    }
+
 }
+ 
