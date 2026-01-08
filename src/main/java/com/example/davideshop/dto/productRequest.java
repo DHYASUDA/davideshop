@@ -25,14 +25,17 @@ public class productRequest {
     public Long getId() {
         return id;
     }
-
-    public String getimageBase64() {
-        return imageBase64;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public void setimageBase64(String imageBase64) {
-        this.imageBase64 = imageBase64;
-    }
+    public String getImageBase64() {
+    return imageBase64;
+}
+
+public void setImageBase64(String imageBase64) {
+    this.imageBase64 = imageBase64;
+}
 
     public String getCreatedBy() {
         return createdBy;

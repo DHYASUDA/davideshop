@@ -34,7 +34,7 @@ public class productService {
         product.setCategory(request.getCategory());
         product.setCreatedBy(request.getCreatedBy());
 
-        String dataUrl = request.getimageBase64(); // make sure DTO getter name matches
+        String dataUrl = request.getImageBase64(); // make sure DTO getter name matches
  
         if (dataUrl != null && !dataUrl.isBlank()) {
             int comma = dataUrl.indexOf(',');
@@ -87,4 +87,9 @@ public class productService {
         }
         return optionalProduct;
     }
+
+    public productEntity searchByIdLong(Long id) {
+    return productRepo.findById(id)
+        .orElseThrow(() -> new IllegalArgumentException("Unable to find product"));
+}
 }

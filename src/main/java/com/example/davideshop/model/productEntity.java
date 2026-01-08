@@ -43,7 +43,7 @@ public class productEntity {
     @Column(name = "created_by", length=100)
     private String createdBy;
 
-    @Column(name = "image_url")
+    @Column(name = "image_url" , columnDefinition = "TEXT")
     private String imageUrl;
 
     public productEntity() {}
@@ -62,6 +62,7 @@ public class productEntity {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+    
     public String getImageUrl() {
         return imageUrl;
     }
