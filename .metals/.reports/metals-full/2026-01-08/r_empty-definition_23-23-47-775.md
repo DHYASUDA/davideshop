@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java:_empty_/productEntity#setDescription#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+empty definition using pc, found symbol in pc: _empty_/productEntity#setDescription#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1296
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+text:
+```scala
 package com.example.davideshop.service;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,18 +39,18 @@ public class productService {
     }
 
     // create product
-    public productEntity updateProductInfo(Long id, productUpdateRequest req) {
-    productEntity p = productRepo.findById(id)
+    public productEntity updateProductInfo (@RequestBody productUpdateRequest request, Long id){
+        productEntity p = productRepo.findById(id)
         .orElseThrow(() -> new RuntimeException("Product not found"));
 
-    if (req.getPrice() != null) p.setPrice(req.getPrice());
-    if (req.getDescription() != null) p.setDescription(req.getDescription());
-    if (req.getCategory() != null) p.setCategory(req.getCategory());
-    if (req.getStockQuantity() != null) p.setStockQuantity(req.getStockQuantity());
+    if (request.getPrice() != null) p.setPrice(req.getPrice());
+    if (request.getDescription() != null) p.set@@Description(req.getDescription());
+    if (request.getCategory() != null) p.setCategory(req.getCategory());
+    if (reques.getStockQuantity() != null) p.setStockQuantity(req.getStockQuantity());
     if (req.getName() != null) p.setName(req.getName());
 
     return productRepo.save(p);
-}
+    }
     public productEntity createProduct(productRequest request) {
         productEntity product = new productEntity();
         product.setName(request.getName());
@@ -109,3 +120,10 @@ public class productService {
 }
 
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/productEntity#setDescription#

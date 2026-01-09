@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java:org/springframework/web/bind/annotation/PathVariable#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+empty definition using pc, found symbol in pc: org/springframework/web/bind/annotation/PathVariable#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 469
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+text:
+```scala
 package com.example.davideshop.service;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,14 +19,11 @@ import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable@@;
 
 import com.example.davideshop.dto.productRequest;
-import com.example.davideshop.dto.userUpdateRequest;
-import com.example.davideshop.dto.productUpdateRequest;
 import com.example.davideshop.model.productEntity;
 import com.example.davideshop.repository.productRepo;
 
@@ -28,18 +36,9 @@ public class productService {
     }
 
     // create product
-    public productEntity updateProductInfo(Long id, productUpdateRequest req) {
-    productEntity p = productRepo.findById(id)
-        .orElseThrow(() -> new RuntimeException("Product not found"));
+    public productEntity updateProductInfo(@PathVariable("id") Long id){
 
-    if (req.getPrice() != null) p.setPrice(req.getPrice());
-    if (req.getDescription() != null) p.setDescription(req.getDescription());
-    if (req.getCategory() != null) p.setCategory(req.getCategory());
-    if (req.getStockQuantity() != null) p.setStockQuantity(req.getStockQuantity());
-    if (req.getName() != null) p.setName(req.getName());
-
-    return productRepo.save(p);
-}
+    }
     public productEntity createProduct(productRequest request) {
         productEntity product = new productEntity();
         product.setName(request.getName());
@@ -109,3 +108,10 @@ public class productService {
 }
 
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: org/springframework/web/bind/annotation/PathVariable#

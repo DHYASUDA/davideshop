@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java:_empty_/productEntity#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+empty definition using pc, found symbol in pc: _empty_/productEntity#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1725
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+text:
+```scala
 package com.example.davideshop.controller;
 
 import java.util.List;
@@ -8,14 +19,11 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.http.MediaType;
 
 import com.example.davideshop.dto.productRequest;
-import com.example.davideshop.dto.productUpdateRequest;
 import com.example.davideshop.model.productEntity;
 import com.example.davideshop.service.productService;
 
@@ -41,32 +49,25 @@ public class productController {
     }
 
     @PostMapping("/display-user-products")
-    public ResponseEntity<List<productEntity>> displayUserProducts(@RequestBody productRequest request){
+    public ResponseEntity<List<productEnt@@ity>> displayUserProducts(@RequestBody productRequest request){
     List<productEntity> products = productService.searchByEmail(request.getCreatedBy());
 
     // Return the list with a 200 OK status
     return ResponseEntity.ok(products);
     }
-    @GetMapping("/{id}") //path variable gets the id from the url
+    @GetMapping("/{id}")
     public ResponseEntity<productEntity> getById(@PathVariable("id") Long id){
         productEntity product = productService.searchByIdLong(id);
     return ResponseEntity.ok(product);
     }
 
-    @PutMapping(
-    value = "/{id}",
-    consumes = MediaType.APPLICATION_JSON_VALUE,
-    produces = MediaType.APPLICATION_JSON_VALUE
-)
-public ResponseEntity<productEntity> updateProduct(
-        @PathVariable("id") Long id,
-        @RequestBody productUpdateRequest request
-) {
-    productEntity updated = productService.updateProductInfo(id, request);
-    return ResponseEntity.ok(updated);
-}
+    
 
 }
-
-
  
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/productEntity#

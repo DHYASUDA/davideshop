@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java:_empty_/productService#searchByIdLong#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+empty definition using pc, found symbol in pc: _empty_/productService#searchByIdLong#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 2297
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+text:
+```scala
 package com.example.davideshop.controller;
 
 import java.util.List;
@@ -12,7 +23,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.http.MediaType;
 
 import com.example.davideshop.dto.productRequest;
 import com.example.davideshop.dto.productUpdateRequest;
@@ -49,7 +59,7 @@ public class productController {
     }
     @GetMapping("/{id}") //path variable gets the id from the url
     public ResponseEntity<productEntity> getById(@PathVariable("id") Long id){
-        productEntity product = productService.searchByIdLong(id);
+        productEntity product = productService.searchByIdL@@ong(id);
     return ResponseEntity.ok(product);
     }
 
@@ -70,3 +80,9 @@ public ResponseEntity<productEntity> updateProduct(
 
 
  
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/productService#searchByIdLong#

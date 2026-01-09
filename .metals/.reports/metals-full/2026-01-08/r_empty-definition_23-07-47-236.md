@@ -1,8 +1,19 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java:org/springframework/http/HttpStatus#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+empty definition using pc, found symbol in pc: org/springframework/http/HttpStatus#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 113
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+text:
+```scala
 package com.example.davideshop.controller;
 
 import java.util.List;
 
-import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatu@@s;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,10 +23,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.http.MediaType;
 
 import com.example.davideshop.dto.productRequest;
-import com.example.davideshop.dto.productUpdateRequest;
 import com.example.davideshop.model.productEntity;
 import com.example.davideshop.service.productService;
 
@@ -53,20 +62,20 @@ public class productController {
     return ResponseEntity.ok(product);
     }
 
-    @PutMapping(
-    value = "/{id}",
-    consumes = MediaType.APPLICATION_JSON_VALUE,
-    produces = MediaType.APPLICATION_JSON_VALUE
-)
-public ResponseEntity<productEntity> updateProduct(
-        @PathVariable("id") Long id,
-        @RequestBody productUpdateRequest request
-) {
-    productEntity updated = productService.updateProductInfo(id, request);
-    return ResponseEntity.ok(updated);
-}
+    @PutMapping
+    public ResponseEntity<productEntity> updateProduct(@PathVariable("id") Long id){
+        productEntity product = productService.updateProduct(id);
+        return ResponseEntity.ok(product);
+
+    }
 
 }
 
 
  
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: org/springframework/http/HttpStatus#

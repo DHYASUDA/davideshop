@@ -38,6 +38,13 @@ interface in the repositories will tell java to create a class that can CRUD wit
 the JpaRepo<T, entity> = JPA requries a entity type which is the x entity and a ID for the data you want (user.ID). 
 Optinal is basically an error catch e.g, if you try to find a user that doesnt exisit it wont crash. 
 
+useEffect in React: is used when you "render" things such as fetching, updating, writing to localstorage, etc
+its usually after React renders the fetch -> do this
+
+@GetMapping (reading) -> retrieving data / not editinbg
+@PostMapping (create/action) -> creating objects e.g users
+@PutMapping (updating/replace/delete) -> updating prices/user info
+
 flow:
 react (where the user enters data) -> controller (recieves https reuqests so data) -> Service (what user wants to do with the data) -> Repoository (CRUD) -> database
 
@@ -69,4 +76,11 @@ TODO:
 - work on user products done
 - display products done
 - display images done
-- when product is clicked, send to a products page with information done
+- when product is clicked, send to a products page with information done 
+
+1/8 TODO:
+- finishing designing product info done
+- make sure everything for the product gets displayed done
+- makeing sure page knows its your product vs a customers done? i think
+- edit product info
+- buy now / add to cart

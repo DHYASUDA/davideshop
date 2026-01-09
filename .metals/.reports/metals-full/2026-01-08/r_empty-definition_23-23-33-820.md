@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java:java/util/Optional#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+empty definition using pc, found symbol in pc: java/util/Optional#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1066
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+text:
+```scala
 package com.example.davideshop.service;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,18 +39,15 @@ public class productService {
     }
 
     // create product
-    public productEntity updateProductInfo(Long id, productUpdateRequest req) {
-    productEntity p = productRepo.findById(id)
-        .orElseThrow(() -> new RuntimeException("Product not found"));
-
-    if (req.getPrice() != null) p.setPrice(req.getPrice());
-    if (req.getDescription() != null) p.setDescription(req.getDescription());
-    if (req.getCategory() != null) p.setCategory(req.getCategory());
-    if (req.getStockQuantity() != null) p.setStockQuantity(req.getStockQuantity());
-    if (req.getName() != null) p.setName(req.getName());
-
-    return productRepo.save(p);
-}
+    public productEntity updateProductInfo (@RequestBody productUpdateRequest request, Long id){
+        @@Optional<productEntity> optionalProduct = productRepo.findById(request.getId());
+        
+        productEntity product = optionalProduct.get();
+        product.setPrice(request.getPrice());
+        product.setDescription(request.getDescription());
+        product.setCategory(request.getCategory());
+        return product;
+    }
     public productEntity createProduct(productRequest request) {
         productEntity product = new productEntity();
         product.setName(request.getName());
@@ -109,3 +117,10 @@ public class productService {
 }
 
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: java/util/Optional#
