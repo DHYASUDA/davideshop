@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java:_empty_/productRepo#findById#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+empty definition using pc, found symbol in pc: _empty_/productRepo#findById#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 4687
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+text:
+```scala
 package com.example.davideshop.service;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -114,8 +125,15 @@ public class productService {
         if(optionalProduct.isEmpty()){
             throw new IllegalArgumentException("Unable to find");
         }
-        productRepo.delete(optionalProduct.get());
+        productRepo.delete(productRepo.fin@@dById(id));
 
     }
 
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/productRepo#findById#

@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java:com/example/davideshop/model/productEntity#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+empty definition using pc, found symbol in pc: com/example/davideshop/model/productEntity#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 673
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+text:
+```scala
 package com.example.davideshop.service;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,7 +27,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.example.davideshop.dto.productRequest;
 import com.example.davideshop.dto.userUpdateRequest;
 import com.example.davideshop.dto.productUpdateRequest;
-import com.example.davideshop.model.productEntity;
+import com.example.davideshop.model.@@productEntity;
 import com.example.davideshop.repository.productRepo;
 
 @Service
@@ -114,8 +125,15 @@ public class productService {
         if(optionalProduct.isEmpty()){
             throw new IllegalArgumentException("Unable to find");
         }
-        productRepo.delete(optionalProduct.get());
+        productRepo.delete(optionalProduct);
 
     }
 
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: com/example/davideshop/model/productEntity#

@@ -2148,3 +2148,10 @@ WARNING: Unmatched cancel notification for request id 3185
 2026.01.09 00:53:16 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\controller\productController.java. Using fallback presentation compiler.
 Jan 09, 2026 12:53:27 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2026.01.09 00:53:47 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\controller\productController.java. Using fallback presentation compiler.
+2026.01.09 00:53:47 WARN  no build target for: C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\controller\productController.java
+2026.01.09 00:53:47 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\controller\productController.java. Using fallback presentation compiler.
+2026.01.09 00:53:47 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\controller\productController.java. Using fallback presentation compiler.
+2026.01.11 20:05:29 INFO  Started: Metals version 1.6.4 in folders 'C:\Users\david\Desktop\davideshop' for client Visual Studio Code 1.107.1.
+2026.01.11 20:05:33 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.01.11 20:05:34 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\config\CorsConfig.java. Using fallback presentation compiler.

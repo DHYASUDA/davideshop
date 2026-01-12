@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java:_empty_/productService#deleteProduct#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+empty definition using pc, found symbol in pc: _empty_/productService#deleteProduct#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 3030
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+text:
+```scala
 package com.example.davideshop.controller;
 
 import java.util.List;
@@ -68,7 +79,7 @@ public ResponseEntity<productEntity> updateProduct(
 }
     @DeleteMapping("/{id}")
     public ResponseEntity<productEntity> deleteProduct(@PathVariable("id") Long id){
-        productService.deleteProduct(id);
+        productService.deleteProduc@@t(id);
         return ResponseEntity.noContent().build();
     }
 
@@ -78,3 +89,9 @@ public ResponseEntity<productEntity> updateProduct(
 
 
  
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/productService#deleteProduct#
