@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java:_empty_/PostMapping#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+empty definition using pc, found symbol in pc: _empty_/PostMapping#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1957
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+text:
+```scala
 package com.example.davideshop.controller;
 
 import java.util.List;
@@ -41,7 +52,7 @@ public class productController {
         productEntity product = productService.createProduct(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(product);
     }
-    @PostMapping("/search-by-id")
+    @PostMappi@@ng("/search-by-id")
     public productEntity searchById(@RequestBody productRequest request) {// this turns react json file to a dto
         return productService.searchById(request);
     }
@@ -83,3 +94,9 @@ public ResponseEntity<productEntity> updateProduct(
 
 
  
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/PostMapping#

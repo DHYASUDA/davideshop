@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface productRepo extends JpaRepository<productEntity,Long> {
     //optional returns a singluar entity, while List returns multiple
     Optional<productEntity> findById(Long id);
-
+    List<productEntity> findByCategory(String category);
     List<productEntity> findByCreatedBy(String email);
+    
 }

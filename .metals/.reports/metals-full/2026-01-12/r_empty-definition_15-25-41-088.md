@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java:_empty_/productEntity#setCreatedBy#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+empty definition using pc, found symbol in pc: _empty_/productEntity#setCreatedBy#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1962
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/service/productService.java
+text:
+```scala
 package com.example.davideshop.service;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -27,7 +38,6 @@ public class productService {
         this.productRepo = productRepo;
     }
 
-
     // create product
     public productEntity updateProductInfo(Long id, productUpdateRequest req) {
     productEntity p = productRepo.findById(id)
@@ -48,7 +58,7 @@ public class productService {
         product.setPrice(request.getPrice());
         product.setStockQuantity(request.getStockQuantity());
         product.setCategory(request.getCategory());
-        product.setCreatedBy(request.getCreatedBy());
+        product.setCr@@eatedBy(request.getCreatedBy());
 
         String dataUrl = request.getImageBase64(); // make sure DTO getter name matches
  
@@ -104,20 +114,10 @@ public class productService {
         return optionalProduct;
     }
 
-    //search products by categories
-    public List<productEntity> searchByCategory(String category){
-        List<productEntity> optionalProducts = productRepo.findByCategory(category);
-        if(optionalProducts.isEmpty()){
-            throw new IllegalArgumentException("Cannot find products by searchByCategory");
-        }
-        return optionalProducts;
-    }
-
     public productEntity searchByIdLong(Long id) {
     return productRepo.findById(id)
         .orElseThrow(() -> new IllegalArgumentException("Unable to find product"));
 }
-
 
     public void deleteProduct(Long id){
         //first search product by id
@@ -130,3 +130,10 @@ public class productService {
     }
 
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/productEntity#setCreatedBy#

@@ -38,8 +38,18 @@ interface in the repositories will tell java to create a class that can CRUD wit
 the JpaRepo<T, entity> = JPA requries a entity type which is the x entity and a ID for the data you want (user.ID). 
 Optinal is basically an error catch e.g, if you try to find a user that doesnt exisit it wont crash. 
 
+Command Line Runner - for the seeder class is basically the boot code that runs when you start springboot
+Component - tells spring to create an instance or a spring bean
+Profile - lets you control when to run a class (only as dev)
+
+Websockets - client and endpoint talking to each other at all times. e.g chat messages "typing.." (talking on the phone)
+HTTP/REST - The client sends and waits for a response back. (Sending handwritten messages)
+FRONTEND: 
+
 useEffect in React: is used when you "render" things such as fetching, updating, writing to localstorage, etc
 its usually after React renders the fetch -> do this
+
+
 
 @GetMapping (reading) -> retrieving data / not editinbg
 @PostMapping (create/action) -> creating objects e.g users
@@ -88,4 +98,14 @@ TODO:
 
 1/11 TODO:
 - delete feature done
-- display items in home (for everyone)
+
+1/12 TODO:
+- specfic categories of products done
+- populate items in product database done
+- display items in home (for everyone/based on categoires)
+
+1/13 TODO:
+- display items on home screen (done)
+- make sure it knows whether its your item or not (done)
+- add a "click here for more items" 
+- create pages for each item category
