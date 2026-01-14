@@ -27,7 +27,7 @@ public class productService {
         this.productRepo = productRepo;
     }
 
-
+    
     // create product
     public productEntity updateProductInfo(Long id, productUpdateRequest req) {
     productEntity p = productRepo.findById(id)
@@ -127,6 +127,10 @@ public class productService {
         }
         productRepo.delete(optionalProduct.get());
 
+    }
+
+    public List<productEntity> getAllProducts(){
+        return productRepo.findAll();
     }
 
 }

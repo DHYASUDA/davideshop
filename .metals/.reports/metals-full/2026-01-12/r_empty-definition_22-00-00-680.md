@@ -1,3 +1,14 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java:java/util/List#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+empty definition using pc, found symbol in pc: java/util/List#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 3495
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/controller/productController.java
+text:
+```scala
 package com.example.davideshop.controller;
 
 import java.util.List;
@@ -31,17 +42,9 @@ public class productController {
         this.productService = productService;
     }
 
-    @GetMapping("/allProducts")
-    public ResponseEntity<List<productEntity>> getAllProducts(){
-        List<productEntity> products = productService.getAllProducts();
-         return ResponseEntity.ok(products);
-    }
-    
-    @PostMapping("/productsByCategory/{category}")
-    public ResponseEntity<List<productEntity>> displayProductsHome(@RequestBody productRequest request,
-        @PathVariable("category") String category
-    ){
-        List<productEntity> products = productService.searchByCategory(category);
+    @PostMapping("/homeProducts")
+    public ResponseEntity<List<productEntity>> displayProductsHome(@RequestBody productRequest request){
+        List<productEntity> products = productService.searchByCategory(request.getCategory());
         return ResponseEntity.ok(products);
     }
     @PostMapping("/createProduct")
@@ -61,7 +64,7 @@ public class productController {
     // Return the list with a 200 OK status
     return ResponseEntity.ok(products);
     }
-    @GetMapping("/id/{id}") //path variable gets the id from the url
+    @GetMapping("/{id}") //path variable gets the id from the url
     public ResponseEntity<productEntity> getById(@PathVariable("id") Long id){
         productEntity product = productService.searchByIdLong(id);
     return ResponseEntity.ok(product);
@@ -79,13 +82,17 @@ public ResponseEntity<productEntity> updateProduct(
     productEntity updated = productService.updateProductInfo(id, request);
     return ResponseEntity.ok(updated);
 }
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<productEntity> deleteProduct(@PathVariable("id") Long id){
         productService.deleteProduct(id);
         return ResponseEntity.noContent().build();
     }
 
-    
+    @GetMapping("/allProducts")
+    public ResponseEntity<List<productEntity>> getAllProducts(){
+        @@List<productEntity> products = productService.getAllProducts();
+    return ResponseEntity.ok(products);
+    }
 
 
 
@@ -93,3 +100,9 @@ public ResponseEntity<productEntity> updateProduct(
 
 
  
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: java/util/List#
