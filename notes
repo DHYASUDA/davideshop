@@ -49,7 +49,7 @@ FRONTEND:
 useEffect in React: is used when you "render" things such as fetching, updating, writing to localstorage, etc
 its usually after React renders the fetch -> do this
 
-
+useParams() ->  to get the parameter in the url.
 
 @GetMapping (reading) -> retrieving data / not editinbg
 @PostMapping (create/action) -> creating objects e.g users
@@ -107,5 +107,11 @@ TODO:
 1/13 TODO:
 - display items on home screen (done)
 - make sure it knows whether its your item or not (done)
-- add a "click here for more items" 
-- create pages for each item category
+- add a "click here for more items" (done)
+- create pages for each item category (done)
+
+
+1/14 TODO:
+- when user clicks see more, it directs them to a page with products based on whichever category they want (done)
+- design the see more page and home (done)
+

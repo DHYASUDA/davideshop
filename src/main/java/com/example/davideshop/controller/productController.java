@@ -37,9 +37,8 @@ public class productController {
          return ResponseEntity.ok(products);
     }
     
-    @PostMapping("/productsByCategory/{category}")
-    public ResponseEntity<List<productEntity>> displayProductsHome(@RequestBody productRequest request,
-        @PathVariable("category") String category
+    @GetMapping("/productsByCategory/{category}")
+    public ResponseEntity<List<productEntity>> displayProductsHome(@PathVariable("category") String category
     ){
         List<productEntity> products = productService.searchByCategory(category);
         return ResponseEntity.ok(products);
