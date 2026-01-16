@@ -1,7 +1,18 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/model/userEntity.java:_empty_/OneToOne#mappedBy#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/model/userEntity.java
+empty definition using pc, found symbol in pc: _empty_/OneToOne#mappedBy#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 2973
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/model/userEntity.java
+text:
+```scala
 package com.example.davideshop.model;
+import com.example.davideshop.model.cartEntity;
 import java.time.Instant;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -40,8 +51,6 @@ public class userEntity {
     private String country;
     @Column(name = "city", length = 255)
     private String city;
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-    private cartEntity activeCart;
 
     // === getters & setters ===
     public Long getId() {
@@ -121,5 +130,13 @@ public void setCity(String city) {
     this.city = city;
 }
 
-
+@OneToOne(mapped@@By = "user", cascade = CascadeType.ALL)
+private CartEntity activeCart;
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/OneToOne#mappedBy#

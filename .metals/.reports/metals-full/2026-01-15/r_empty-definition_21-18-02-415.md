@@ -1,7 +1,21 @@
+error id: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/model/userEntity.java:org/hibernate/annotations/CascadeType#
+file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/model/userEntity.java
+empty definition using pc, found symbol in pc: org/hibernate/annotations/CascadeType#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 152
+uri: file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/model/userEntity.java
+text:
+```scala
 package com.example.davideshop.model;
+import com.example.davideshop.model.cartEntity;
+
 import java.time.Instant;
 
-import jakarta.persistence.CascadeType;
+import org.hibernate.annotations.@@CascadeType;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -123,3 +137,10 @@ public void setCity(String city) {
 
 
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: org/hibernate/annotations/CascadeType#
