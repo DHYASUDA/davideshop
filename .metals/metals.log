@@ -8824,3 +8824,46 @@ INFO: Unsupported notification method: $/setTrace
 2026.01.15 21:17:28 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
 2026.01.15 21:17:29 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
 2026.01.15 21:17:44 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:01 WARN  no build target for: C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java
+2026.01.15 21:18:01 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:02 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:02 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:02 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:02 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:02 INFO  Created report: Optional[file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/model/userEntity.java]
+2026.01.15 21:18:02 INFO  empty definition using pc, found symbol in pc: org/hibernate/annotations/CascadeType# (full report at: "C:\Users\david\Desktop\davideshop\.metals\.reports\metals-full\2026-01-15\r_empty-definition_21-18-02-415.md")
+2026.01.15 21:18:02 INFO  empty definition using pc, found symbol in pc: org/hibernate/annotations/CascadeType# (full report at: "C:\Users\david\Desktop\davideshop\.metals\.reports\metals-full\2026-01-15\r_empty-definition_21-18-02-415.md")
+2026.01.15 21:18:02 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:03 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:03 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:03 WARN  no build target for: C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java
+2026.01.15 21:18:03 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:03 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:03 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:07 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:10 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:12 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:16 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:22 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:24 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\userEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:26 WARN  no build target for: C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java
+2026.01.15 21:18:26 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:26 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:26 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:26 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:29 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:29 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:30 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:30 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:32 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:32 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:32 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:32 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:32 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:33 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:33 INFO  Created report: Optional[file:///C:/Users/david/Desktop/davideshop/src/main/java/com/example/davideshop/model/cartEntity.java]
+2026.01.15 21:18:33 INFO  empty definition using pc, found symbol in pc: _empty_/OneToMany#cascade# (full report at: "C:\Users\david\Desktop\davideshop\.metals\.reports\metals-full\2026-01-15\r_empty-definition_21-18-33-373.md")
+2026.01.15 21:18:33 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:34 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
+2026.01.15 21:18:34 WARN  no build target for: C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java
+2026.01.15 21:18:35 INFO  no build target found for C:\Users\david\Desktop\davideshop\src\main\java\com\example\davideshop\model\cartEntity.java. Using fallback presentation compiler.
